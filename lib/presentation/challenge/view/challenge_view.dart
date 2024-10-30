@@ -23,6 +23,7 @@ class _ChallengeViewState extends State<ChallengeView>
 
   @override
   void initState() {
+    // Load the post information when the view is initialized
     super.initState();
     context.read<ChallengeBloc>().add(LoadPostInformation());
     _tabController = TabController(length: 2, vsync: this);

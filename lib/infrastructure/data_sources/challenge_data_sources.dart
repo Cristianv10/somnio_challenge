@@ -5,6 +5,7 @@ import 'package:somnio/domain/core/response_model.dart';
 import 'package:somnio/infrastructure/network/challenge_network.dart';
 
 class ChallengeDataSource {
+  // This method fetches post information from the network
   Future<List<Post>> fetchPostInformation() async {
     try {
       final response = await http.get(Uri.parse(ChallengeNetwork.baseUrl));

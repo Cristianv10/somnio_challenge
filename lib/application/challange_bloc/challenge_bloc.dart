@@ -9,7 +9,7 @@ class ChallengeBloc extends Bloc<ChallengeEvent, ChallengeState> {
   ChallengeBloc(this.challengeRepository) : super(ChallengeInitial()) {
     on<LoadPostInformation>(_onLoadPostInformation);
   }
-
+  // This method is called when the LoadPostInformation event is added to the bloc
   Future<void> _onLoadPostInformation(
       LoadPostInformation event, Emitter<ChallengeState> emit) async {
     emit(ChallengeLoading());

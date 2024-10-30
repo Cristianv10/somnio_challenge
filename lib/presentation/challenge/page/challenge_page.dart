@@ -7,6 +7,7 @@ class ChallengePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Get the size of the screen to make the layout responsive
     Size size = MediaQuery.of(context).size;
     return ChallengeLayout(
       children: Padding(

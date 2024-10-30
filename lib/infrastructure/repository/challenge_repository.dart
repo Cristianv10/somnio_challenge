@@ -12,6 +12,7 @@ class ChallengeRepositoryImpl extends ChallengeRepository {
   });
 
   @override
+  // implement this method in the data layer
   Future<Either<GenericInvalidData, List<Post>>> fetchPostInformation() async {
     try {
       final post = await challengeDataSource.fetchPostInformation();
