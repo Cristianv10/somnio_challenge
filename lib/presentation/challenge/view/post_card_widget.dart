@@ -46,19 +46,24 @@ class ReadMore extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
-      children: [
-        TextBase(
-          text: 'Read More',
-          color: Colors.blue,
-        ),
-        SizedBox(width: 4.0),
-        Icon(
-          Icons.arrow_forward_outlined,
-          size: 16,
-          color: Colors.blue,
-        ),
-      ],
+    return InkWell(
+      onTap: () {},
+      focusColor: Colors.grey,
+      hoverColor: Colors.grey,
+      child: const Row(
+        children: [
+          TextBase(
+            text: 'Read More',
+            color: Colors.blue,
+          ),
+          SizedBox(width: 4.0),
+          Icon(
+            Icons.arrow_forward_outlined,
+            size: 16,
+            color: Colors.blue,
+          ),
+        ],
+      ),
     );
   }
 }
