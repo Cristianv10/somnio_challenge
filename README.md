@@ -38,3 +38,18 @@ flutter clean
 flutter pub get
 flutter packages pub run build_runner build --delete-conflicting-outputs
 ```
+
+## ANDROID PROJECT
+
+This test was done to run in Android devices after the previous steps. To do it follow the next steps to run in emulator:
+
+```bash
+flutter run --release
+```
+
+After the list of emulators is displayed, run the number that appears in your pc that is an android emulator or an android cellphone:
+
+```bash
+flutter run --release 
+'Select now the '
+```
