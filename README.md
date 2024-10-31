@@ -51,5 +51,5 @@ After the list of emulators is displayed, run the number that appears in your pc
 
 ```bash
 flutter run --release 
-'Select now the '
+'Select now the number for the emulator or physical device '
 ```
